@@ -9,6 +9,8 @@ Requires:
 * Optional: Ano (https://github.com/scottdarch/Arturo) Deprecated, but there is a
   workaround: Older Arduino Software included under arduino
 
+
+The files include:
 * STLs to replace any broken parts
 * Marlin as last programmed to adjust firmware settings (toolchain is ano, see runme.sh for the
   programming sequence)
