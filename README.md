@@ -1,8 +1,6 @@
 # DIYTechShop_I3XL
-This is just about everything needed for a Diy Tech Shop I3XL, made by XSSink, It is an older printer kit made to have a bit larger of a print area than other Prusa i3s. 
-
 The following repository contains all the required files to make changes and
-repairs to one of these 3D printer kits.
+repairs to one of these older 3D printer kits.
 
 Requires:
 * Arduino software to flash the 3D printer
