@@ -1,0 +1,179 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5433,        170]
+NotebookOptionsPosition[      4869,        146]
+NotebookOutlinePosition[      5201,        161]
+CellTagsIndexPosition[      5158,        158]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"All", " ", "units", " ", "in", " ", "mm"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"newstep", "[", "n_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"newstep", "[", 
+     RowBox[{"n", "-", "1"}], "]"}], 
+    RowBox[{"(", 
+     FractionBox[
+      RowBox[{"ideal", "[", "n", "]"}], 
+      RowBox[{"act", "[", "n", "]"}]], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{
+  3.618948537329357*^9, {3.618948623481731*^9, 3.618948637951741*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"defaultstep", "=", 
+   RowBox[{"{", 
+    RowBox[{"79.6814", ",", "79.6364", ",", "3989.4"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"newstep", "[", "0", "]"}], "=", "defaultstep"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.6189484058065453`*^9, 3.61894845480951*^9}, {
+   3.61894849685152*^9, 3.6189485000042477`*^9}, {3.618948558853901*^9, 
+   3.618948621818685*^9}, {3.618948658909992*^9, 3.618948694127187*^9}, 
+   3.618948795196808*^9, {3.618948991595187*^9, 3.618949011662468*^9}, {
+   3.619003710291086*^9, 3.619003711268573*^9}}],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+   RowBox[{"Ideal", " ", "is", " ", "value", " ", "expected"}], ",", "  ", 
+   RowBox[{"act", 
+    RowBox[{"(", "ual", ")"}], " ", "value", " ", "is", " ", "what", " ", 
+    "is", " ", 
+    RowBox[{"measured", ".", "\[IndentingNewLine]", "Generates"}], " ", "a", 
+    " ", 
+    RowBox[{
+    "correction", ".", " ", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     "Please"}], " ", "keep", " ", "defaultstep", " ", "up", " ", "to", " ", 
+    RowBox[{"date", "!"}]}]}], "\[IndentingNewLine]", "*)"}]], "Input",
+ CellChangeTimes->{{3.6189488480142097`*^9, 3.618948988377149*^9}, {
+  3.618949019013742*^9, 3.6189490309691153`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"ideal", "[", "1", "]"}], "=", 
+    RowBox[{"{", 
+     RowBox[{"25", ",", "25", ",", "20"}], "}"}]}], ";"}], 
+  " "}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"act", "[", "1", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{"25.06", ",", "25.18", ",", "20.12"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"newstep", "[", "1", "]"}]}], "Input",
+ CellChangeTimes->{{3.618948431073743*^9, 3.6189484359016542`*^9}, {
+   3.618948552922024*^9, 3.618948553059866*^9}, {3.618948587736479*^9, 
+   3.618948587875023*^9}, {3.618948797987273*^9, 3.618948802914341*^9}, 
+   3.619003562711349*^9, {3.619003664737734*^9, 3.619003703067535*^9}, 
+   3.6190192974213743`*^9, 3.619024263112543*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "79.49062250598563`", ",", "79.0671167593328`", ",", 
+   "3965.6063618290254`"}], "}"}]], "Output",
+ CellChangeTimes->{3.619024264402323*^9, 3.619172769210857*^9, 
+  3.6191728167087193`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"ideal", "[", "2", "]"}], "=", 
+   RowBox[{"ideal", "[", "1", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"act", "[", "2", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{"25.04", ",", "25.04", ",", "25.37"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"newstep", "[", "2", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.619019299725513*^9, 3.619019308432822*^9}, {
+   3.619019347923869*^9, 3.6190193735640507`*^9}, {3.619019407574624*^9, 
+   3.619019413575086*^9}, 3.6191727669689703`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"ideal", "[", "3", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{"50", ",", "50", ",", "50"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"act", "[", "3", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{"49.71", ",", "49.33", ",", "50.25"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"newstep", "[", "3", "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.619172609885808*^9, 3.619172639617281*^9}, {
+  3.6191726940456038`*^9, 3.6191726947752*^9}, {3.619172727574003*^9, 
+  3.619172762372148*^9}, {3.619172796948002*^9, 3.619172805333246*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "79.82663516485232`", ",", "80.01298546624285`", ",", 
+   "3110.663757937961`"}], "}"}]], "Output",
+ CellChangeTimes->{3.619172769255377*^9, 3.6191728167411423`*^9}]
+}, Open  ]]
+},
+WindowSize->{702, 783},
+WindowMargins->{{Automatic, 2}, {2, Automatic}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (June 27, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 498, 15, 91, "Input"],
+Cell[1059, 37, 633, 14, 77, "Input"],
+Cell[1695, 53, 676, 14, 143, "Input"],
+Cell[CellGroupData[{
+Cell[2396, 71, 759, 19, 77, "Input"],
+Cell[3158, 92, 232, 6, 32, "Output"]
+}, Open  ]],
+Cell[3405, 101, 579, 15, 77, "Input"],
+Cell[CellGroupData[{
+Cell[4009, 120, 634, 16, 99, "Input"],
+Cell[4646, 138, 207, 5, 65, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

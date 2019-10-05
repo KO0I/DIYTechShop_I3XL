@@ -1,0 +1,14 @@
+
+
+
+
+
+.build_ano/mega/src/Marlin.ino.cpp : src/Marlin.ino
+	@mkdir -p .build_ano/mega/src
+	@echo [93msrc/Marlin.ino[0m
+	@/usr/bin/ano preproc --source-dir src  -o $@ $^
+
+
+all : .build_ano/mega/src/Marlin.ino.cpp
+	@true
+
